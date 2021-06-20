@@ -1,0 +1,27 @@
+// @media screen and (min-width: 480px) {
+// }
+// @media screen and (min-width: 768px) {
+// }
+
+.logo {
+  font-family: var(--logo-font);
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+}
+.logo__first-part {
+  color: var(--accent-color);
+}
+.logo__second-part {
+  color: rgb(0, 0, 0);
+}
+.logo__second-part-bottom {
+  color: var(--dark-background-text-color);
+}
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+  }
+}
