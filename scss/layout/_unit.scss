@@ -1,6 +1,22 @@
 .unit {
   padding-top: 60px;
   padding-bottom: 60px;
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -30px;
+    margin-bottom: -30px;
+  }
+  &__card {
+    margin-right: 30px;
+    margin-bottom: 30px;
+    @media screen and (min-width: 768px) {
+      width: 354px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 270px;
+    }
+  }
   &__icon {
     width: 70px;
     height: 70px;
@@ -31,6 +47,10 @@
     letter-spacing: 0.03em;
     margin-top: 10px;
     margin-bottom: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 // .unit-section {

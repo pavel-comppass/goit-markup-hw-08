@@ -2,37 +2,44 @@
   background-color: var(--footer-background-color);
   padding-top: 60px;
   padding-bottom: 60px;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: baseline;
+      justify-content: space-around;
+    }
+  }
+
+  &__adress-container {
+    text-align: center;
+  }
 }
-.footer__container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+
+.address {
+  font-style: normal;
+  margin-top: 20px;
 }
-// .footer__container {
-//   display: flex;
-//   align-items: baseline;
-// }
-.footer__adress-container {
-  text-align: center;
+.adress-link {
+  color: var(--dark-background-text-color);
 }
-//   margin-right: 70px;
-// }
-// .address {
-//   font-style: normal;
-//   margin-top: 20px;
-// }
-// .adress-link {
-//   color: var(--dark-background-text-color);
-// }
-// .contact-link {
-//   margin-top: 9px;
-// }
-// .contact-item {
-//   color: rgba(255, 255, 255, 0.6);
-// }
-// .footer-social-container {
-//   margin-right: 94px;
-// }
+.contact-link {
+  margin-top: 9px;
+}
+.contact-item {
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer-social-container {
+  @media screen and (max-width: 767px) {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+  // margin-right: 94px;
+}
 .footer-social-header {
   color: var(--dark-background-text-color);
   text-transform: uppercase;
@@ -68,11 +75,21 @@
   width: 20px;
   height: 20px;
 }
-// .footer-subscribe-form {
-//   display: flex;
-//   justify-content: space-between;
-//   margin-top: 20px;
-// }
+@media screen and (min-width: 768px) {
+  .footer-subscribe-container {
+    margin-top: 60px;
+    @media screen and (min-width: 1200px) {
+      margin-top: 0;
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-subscribe-form {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+}
 .subscribe-input {
   width: 350px;
   padding: 16px;
@@ -81,9 +98,15 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
-  margin-right: 12px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
+  @media screen and (max-width: 1199px) {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 12px;
+  }
 }
 .subscribe-button {
   display: flex;
@@ -91,6 +114,7 @@
   justify-content: center;
   background-color: var(--accent-color);
   width: 200px;
+  height: 50px;
   border-radius: 4px;
   color: var(--dark-background-text-color);
   font-weight: 400;
