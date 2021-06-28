@@ -781,6 +781,12 @@ img {
   padding-bottom: 94px;
 }
 
+@media screen and (max-width: 1199px) {
+  .whatwedo-section {
+    display: none;
+  }
+}
+
 .whatwedo-item {
   position: relative;
   flex-basis: calc((100% - 90px) / 3);
@@ -1083,10 +1089,35 @@ img {
   padding-bottom: 94px;
 }
 
+@media screen and (max-width: 1199px) {
+  .portfolio {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
 .filter {
   display: flex;
   justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+}
+
+@media screen and (min-width: 768px) {
+  .filter {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .filter {
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .filter-button {
+    margin-bottom: 14px;
+  }
 }
 
 .filter-button:not(:last-child) {

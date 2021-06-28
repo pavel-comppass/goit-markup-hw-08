@@ -1,7 +1,19 @@
 .filter {
   display: flex;
   justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 30px;
+  }
+  @media screen and (max-width: 1200px) {
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .filter-button {
+    margin-bottom: 14px;
+  }
 }
 .filter-button:not(:last-child) {
   margin-right: 8px;
