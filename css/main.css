@@ -522,6 +522,7 @@ img {
 .menu__open {
   background-color: transparent;
   border: none;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 768px) {
@@ -533,6 +534,10 @@ img {
 .menu__icon {
   width: 40px;
   height: 40px;
+}
+
+.menu__icon:hover, .menu__icon:focus {
+  fill: var(--accent-color);
 }
 
 .menu {

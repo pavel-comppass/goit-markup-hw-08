@@ -26,6 +26,7 @@
 .menu__open {
   background-color: transparent;
   border: none;
+  cursor: pointer;
   @media screen and (min-width: 768px) {
     display: none;
   }
@@ -33,6 +34,10 @@
 .menu__icon {
   width: 40px;
   height: 40px;
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
 }
 .menu {
   display: none;
